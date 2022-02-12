@@ -1,0 +1,208 @@
+/*===============
+    Basic CSS
+=================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+} 
+
+ul {
+    list-style-type: none; 
+}
+
+form {
+    font-size: 18px; 
+    background-color: #fbfbfb; 
+    border: 1px solid #ccc;
+    padding: 25px; 
+    border-radius: 6px; 
+    margin-top: 20px; 
+}
+
+form ul li label {
+    font-weight: 500; 
+    width: 40%; 
+    display: inline-block;  
+}
+
+/*=================
+      Main CSS
+===================*/ 
+body {
+    max-width: 850px; 
+    width: 96%; 
+    margin: 0 auto; 
+    background: #F8F8F8;
+    border: 1px solid #fff;
+    border-radius: 10px; 
+    margin-top: 5px; 
+}
+
+main {
+    background: #ffffff; 
+    padding: 30px; 
+    padding-top: 15px; 
+}
+
+.top_bar {
+    margin: 7px 0;
+    border: 1px solid #d0d0d0; 
+    border-radius: 5px; 
+    padding: 5px; 
+    text-align: center; 
+    background: #F8F8F8;
+    color: #474747; 
+}
+
+form ul li input,
+form ul li select {
+    font-size: 17px; 
+    margin: 5px 0; 
+    padding: 5px 10px; 
+    border-radius: 7px; 
+    border: 1px solid #ccc; 
+    width: 59%;
+}
+
+form ul li input:focus {
+    outline: none; 
+}
+
+form ul li.button {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+form ul li.button input {
+    font-weight: 500; 
+    cursor: pointer; 
+}
+
+form ul li.button input[type="submit"] {
+    width: 125px; 
+    margin-left: 5px; 
+    background-color: #5CB85C; 
+    color: #fff; 
+}
+
+form ul li.button input[type="submit"]:hover {
+    background-color: #2d9e2d; 
+}
+
+form ul li.button input[type="reset"] {
+    width: 100px; 
+    margin-right: 5px; 
+    font-weight: 500;
+}
+
+form ul li.button input[type="reset"]:hover {
+    background-color: #e2e2e2;
+}
+
+footer .bg_box .inside_box p,
+footer .bg_box .inside_box a {
+    text-align: right; 
+    text-decoration: none;
+}
+
+footer {
+    background-color: #dad9d9; 
+    padding: 15px 10px; 
+    border: 1px solid #d0d0d0;  
+    border-radius: 5px; 
+    margin-bottom: 5px; 
+}
+
+/*=======================
+      First Page CSS
+=========================*/ 
+
+.card_container {
+    display: flex; 
+    justify-content: space-between; 
+    
+}
+
+.card_container a {
+    text-decoration: none; 
+    font-size: 30px; 
+    width: 30%; 
+}
+
+.card {
+    height: 150px; 
+    text-align: center; 
+    border: 0 solid #fff; 
+    padding: 10px; 
+    border-radius: 15px;
+    background: #F7F8FA; 
+    box-shadow: 3px 3px #ccc;
+    margin-top: 20px;
+}
+
+.card1:hover {
+    box-shadow: 3px 3px #ff0000; 
+    border: 1px solid #ff0000; 
+    transition: 0.5s ease;
+}
+
+.card2:hover {
+    box-shadow: 3px 3px #28d71e; 
+    border: 1px solid #28d71e; 
+    transition: 0.5s ease;
+}
+
+.card3:hover {
+    box-shadow: 3px 3px #1079ff; 
+    border: 1px solid #1079ff; 
+    transition: 0.5s ease;
+}
+
+.card .fas {
+    font-size: 50px;  
+    margin-top: 10px; 
+}
+
+.card1 .fas, .card1 h2 {
+    color: #ff0000;
+}
+
+.card2 .fas,.card2 h2 {
+    color: #28d71e;
+}
+
+.card3 .fas,.card3 h2 {
+    color: #1079ff;
+} 
+
+/*=======================
+      Iframe CSS
+=========================*/ 
+.result_page {
+    width: 100%; 
+    height: 780px; 
+    overflow-x: hidden; 
+    border-radius: 5px; 
+    border: 1px solid #d0d0d0; 
+    display: none; 
+    font-size: 10px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+} 
+
+/*=================
+      Timer CSS
+===================*/ 
+.timer span {
+    color: rgb(255, 0, 0); 
+}

@@ -1,0 +1,38 @@
+@media only screen and (max-width: 603px) {
+    body main {
+        padding: 15px; 
+    }
+    
+    form ul li label {
+        width: 100%;
+    }
+    
+    form ul li input,
+    form ul li select {
+        width: 100%;
+    }
+    
+    form ul li.button input[type="submit"], 
+    form ul li.button input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    form ul li.button input[type="submit"] {
+        padding: 10px 0;
+    }
+    
+    .card_container a {
+         width: 60%; 
+    }
+    
+    .card .fas {
+         margin-top: 15px; 
+    }
+
+    .card_container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+}

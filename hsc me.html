@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barishal Board Result</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png" /> 
+</head>
+<body>
+    <header>
+        <div class="bg_box">
+            <div class="inside_box">
+                <a href="index.html"><img src="img/banar.png" alt="barishal board banar"></a>
+                <h1></h1>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <div class="bg_box">
+            <div class="inside_box">
+                <div class="top_bar">
+                    <h2 class="timer" id="timer"> It's <span id="days"></span> <span id="hours"></span> <span id="mins"></span> <span id="secs"></span> left to publish result.</h2>
+                    <h3 class="end" id="end">Wait untill your result is published.</h3> 
+                </div>
+                <div class="input_section">
+                    <form action="http://www.barisalboard.gov.bd/home/show_result_hsc" method="post" target="result_page">
+                        <ul>
+                            <li>
+                                <label for="exam">Examination</label>
+                                <select name="exam" id="exam" required>
+                                    <option value="hsc">HSC</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <label for="hsc_roll">Roll No</label>
+                                <input name="hsc_roll" id="hsc_roll" type="number" value="100379" autocomplete="off" placeholder="Enter your roll no" />
+                            </li>
+                            <li>
+                                <label for="hsc_reg">Registration No</label>
+                                <input name="hsc_reg" id="hsc_reg" type="number" value="1615448280" autocomplete="off" placeholder="Enter your registration no" />
+                            </li>
+                            <li>
+                                <label for="hsc_ccode">Center Code</label>
+                                <input name="hsc_ccode" id="hsc_ccode" type="number" value="101" autocomplete="off" placeholder="Your center code" />
+                            </li>
+                            <li>
+                                <label for="year">Year</label>
+                                <select name="year" id="year" type="number">
+                                    <option value="2021">2021</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input name="board" id="board" value="barisal" type="hidden" /> 
+                            </li>
+                            <li class="button">
+                                <input type="reset" value="Reset">
+                                <input type="submit" value="Get Result" onclick="getResultAll()"> 
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <iframe name="result_page" class="result_page" id="result_page" src="" frameborder="0" scrolling="no"></iframe>
+    <footer>
+        <div class="bg_box">
+            <div class="inside_box">
+                <p>Developed by Ahsan Habib</p>
+                <p><a href="mailto:arman0sheikh@gmail.com">Contact Me</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
